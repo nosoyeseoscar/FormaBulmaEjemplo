@@ -1,4 +1,6 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Creado con [Create React App](https://github.com/facebook/create-react-app).
+
+Primer intento usando React Hook Form como una alternativa a Formik y otras formas de hacer formularios, es un sencillo ejemplo de un login con correo electrónico y password que se muestra en consola. <br>
 
 ## Available Scripts
 
