@@ -3,6 +3,7 @@ import React from 'react'
 /* importamos Hook useForm de RHF */
 import {useForm} from "react-hook-form"
 
+
 function Login() {
     const {register, handleSubmit, errors} = useForm()
     /* destructuramos lo que nos ofrece useForm:
@@ -16,9 +17,10 @@ function Login() {
         
     }
     return (
-        <form onSubmit={handleSubmit(onSubmit)}>
+        <form onSubmit={handleSubmit(onSubmit)} >
             {/* <label htmlFor="login">Login</label> */}
             <input
+                className="input-style"
                 name="email"
                 type="text"
                 placeholder="Correo electrónico"
@@ -26,13 +28,14 @@ function Login() {
             />
             {errors.email && <p>{errors.email.message}</p>}
             <input
+                className="input-style"
                 name="password"
                 type="password"
                 placeholder="Contraseña"
                 ref={register({required:"Contraseña obligatoria", minLength:{value:3, message:"contraseña demasiado corta"}})}
             />
             {errors.password && <p>{errors.password.message}</p>}
-            <input type="submit"/>
+            <input type="submit" className="btn-submit"/>
 
         </form>
     )
