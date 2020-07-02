@@ -2,12 +2,16 @@ import React from 'react';
 /* Componentes usados */
 import Login from "./components/loginForm"
 import './App.css';
+/* importamos estilos bulma */
+import "./css/bulma.min.css";
 
 function App() {
   return (
     <div className="App">
-      <div className="container-form">
-        <Login></Login>
+      <div className="columns is-centered">
+        <div className="column is-half">
+          <Login></Login>
+        </div>
       </div>
     </div>
   );
