@@ -19,6 +19,9 @@ function Login() {
     /* función que trata a los datos del formulario al hacer submit */
     console.log(data);
   };
+
+  const estilosImput = "input is-medium my-3"
+
   return (
     
       <div className="card">
@@ -26,7 +29,7 @@ function Login() {
           <form onSubmit={handleSubmit(onSubmit)}>
             <div className="control has-icons-left">
               <input
-                className="input is-link is-medium my-3"
+                className= {!errors.email ? estilosImput+ " is-link": estilosImput+ " is-danger"}
                 name="email"
                 type="text"
                 placeholder="Correo electrónico"
@@ -44,7 +47,7 @@ function Login() {
             )}
             <div className="control has-icons-left">
               <input
-                className="input is-link is-medium my-3"
+                className={!errors.password ? estilosImput+ " is-link": estilosImput+ " is-danger"}
                 name="password"
                 type="password"
                 placeholder="Contraseña"
