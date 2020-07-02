@@ -20,7 +20,7 @@ function Login() {
     console.log(data);
   };
   return (
-    <div className="container">
+    
       <div className="card">
         <div className="card-content">
           <form onSubmit={handleSubmit(onSubmit)}>
@@ -64,7 +64,7 @@ function Login() {
           </form>
         </div>
       </div>
-    </div>
+    
   );
 }
 
