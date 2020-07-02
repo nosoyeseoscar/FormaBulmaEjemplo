@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react";
 /* Componentes usados */
-import Login from "./components/loginForm"
-import './App.css';
+import Login from "./components/loginForm";
+import "./App.css";
 /* importamos estilos bulma */
 import "./css/bulma.min.css";
 
@@ -10,9 +10,7 @@ function App() {
     <div className="App">
       <div className="columns is-centered">
         <div className="column is-half mx-auto">
-          
-            <Login></Login>
-          
+          <Login></Login>
         </div>
       </div>
     </div>
