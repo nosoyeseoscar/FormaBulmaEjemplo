@@ -1,6 +1,7 @@
 Creado con [Create React App](https://github.com/facebook/create-react-app).
 
 Primer intento usando React Hook Form como una alternativa a Formik y otras formas de hacer formularios, es un sencillo ejemplo de un login con correo electrónico y password que se muestra en consola.<br>
+<br>
 Como FrameWork CSS se usó Bulma y para iconos FontAwesome en react.
 <br>
 
