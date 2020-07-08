@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <div className="columns is-centered">
-        <div className="column is-half mx-auto">
+        <div className="tam400 mx-auto">
           <Login></Login>
         </div>
       </div>
